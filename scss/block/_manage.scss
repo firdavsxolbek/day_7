@@ -1,0 +1,96 @@
+.manage{
+    background-color: #012F34;
+    padding-bottom: 140px;
+    padding-top: 198px;
+    background-repeat: no-repeat;
+    background-image: url("../../img/back-img.svg");
+    background-position: right bottom;
+    
+}
+.manage__title{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px; 
+    width: 445px;
+}
+.manage__inner_title{
+    color: #F67E7E;
+font-family: Livvic;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 28px; /* 155.556% */
+width: 445px;
+margin-bottom: 16px;
+}
+.manage__text{
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 25px; 
+    width: 445px;
+}
+// .manage__item{
+//     display: flex;
+//     align-items: start;
+//     max-width: 507px;
+
+
+//     &::before{
+//         @include icon("../../img/icon.svg");
+//     }
+//     &:nth-child(2)::before {
+//         @include icon("../../img/icon2.svg");
+//     }
+// }
+.manage__item {
+    display: flex;
+    align-items: center;
+}
+.manage__item::before {
+    content: "";
+    width: 72px;
+    height: 72px;
+    flex-shrink: 0;
+    display: inline-block;
+    margin-right: 23px;
+    background-repeat: no-repeat;
+    background-image: url("../../img/icon.svg");
+}
+.manage__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@media screen and (max-width:990px) {
+    .manage__container{
+        flex-direction: column;
+
+    }
+    .manage__title{
+        margin-bottom: 64px;
+        line-height: 32px;
+        font-size: 32px;
+        color: #FFF;
+    }
+    .manage__item{
+        min-width: 543px;
+        margin-bottom: 32px;
+    }
+    .manage__inner_title{
+        color: #F67E7E;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px; 
+    }
+    .manage__text{
+        color: #FFF;
+        font-family: Livvic;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 25px; /* 166.667% */
+    }
+    
+}
